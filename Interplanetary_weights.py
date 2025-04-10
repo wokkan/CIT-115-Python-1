@@ -1,6 +1,6 @@
 # Assignment 2 Interplanetary weights
 # Written by Lachlan Harris
-#
+
 
 
 # Set constants for each planets relative gravity
@@ -22,13 +22,13 @@ fWeight = float(input("What is your weight: "))
 # columns and right aligned 10 position columns with two decimal places.
 # Planet weights are calculated using the formula (input weight) * (planet relative gravity)
 print(f"{sName} here are your weights on our Solar System's planets:")
-print( '{:20}'.format("Weight on Mercury:"), format(fWeight * nMERCURY,'>10,.2f'))
-print( '{:20}'.format("Weight on Venus:"), format(fWeight * nVENUS,'>10,.2f'))
-print( '{:20}'.format("Weight on Moon:"), format(fWeight * nMOON,'>10,.2f'))
-print( '{:20}'.format("Weight on Mars:"), format(fWeight * nMARS,'>10,.2f'))
-print( '{:20}'.format("Weight on Jupiter:"), format(fWeight * nJUPITER,'>10,.2f'))
-print( '{:20}'.format("Weight on Saturn:"), format(fWeight * nSATURN,'>10,.2f'))
-print( '{:20}'.format("Weight on Uranus:"), format(fWeight * nURANUS,'>10,.2f'))
-print( '{:20}'.format("Weight on Neptune:"), format(fWeight * nNEPTUNE,'>10,.2f'))
+print( '{:20}'.format("Weight on Mercury:") + format(fWeight * nMERCURY,'>10,.2f'))
+print( '{:20}'.format("Weight on Venus:") + format(fWeight * nVENUS,'>10,.2f'))
+print( '{:20}'.format("Weight on Moon:") + format(fWeight * nMOON,'>10,.2f'))
+print( '{:20}'.format("Weight on Mars:") + format(fWeight * nMARS,'>10,.2f'))
+print( '{:20}'.format("Weight on Jupiter:") + format(fWeight * nJUPITER,'>10,.2f'))
+print( '{:20}'.format("Weight on Saturn:") + format(fWeight * nSATURN,'>10,.2f'))
+print( '{:20}'.format("Weight on Uranus:") + format(fWeight * nURANUS,'>10,.2f'))
+print( '{:20}'.format("Weight on Neptune:") + format(fWeight * nNEPTUNE,'>10,.2f'))
 # An alternate example of alignment and formatting using fstring
-print(f"{format('Weight on Pluto:','<20')} {format(fWeight * nPLUTO,'>10,.2f')}")
+print(f"{format('Weight on Pluto:','<20')}{format(fWeight * nPLUTO,'>10,.2f')}")
