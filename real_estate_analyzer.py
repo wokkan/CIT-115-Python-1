@@ -65,8 +65,8 @@ def getFloatInput(sPromptMessage):
         # If the input is valid, return the value, otherwise show a message for a value below the minimum or invaid data type.
         
         try :  
-            iInput = float(input(sPromptMessage))
-            if iInput > 0:
+            fInput = float(input(sPromptMessage))
+            if fInput > 0:
                 break
             else:
                 # Provide instructions if the value entered is not greater than 0
@@ -76,7 +76,7 @@ def getFloatInput(sPromptMessage):
             print("Invalid Entry - Non-numeric value entered: Please enter a number greater than 0")
     # Return the user input     
        
-    return iInput
+    return fInput
 
 def getStringInput(sPromptMessage): 
     # THis could have been placed in the main function but I like having the consistency of both user inputs being in their own functions

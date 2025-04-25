@@ -108,8 +108,8 @@ def getFloatInput(sPromptMessage):
         # If the input is valid, return the value, otherwise show a message for a value below the minimum or invaid data type.
         
         try :  
-            iInput = float(input(sPromptMessage))
-            if iInput > 0:
+            fInput = float(input(sPromptMessage))
+            if fInput > 0:
                 break
             else:
                 # Provide instructions if a value below the minimum accepted value is entered
@@ -119,7 +119,7 @@ def getFloatInput(sPromptMessage):
             print("Invalid Entry: Please enter a valid number")
     # Return the user input     
        
-    return iInput
+    return fInput
 
 
 
